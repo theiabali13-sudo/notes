@@ -1,0 +1,120 @@
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* الحاوية */
+#app {
+  background: #fff;
+  width: 450px;
+  border-radius: 12px;
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* العنوان */
+#app h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* الفورم */
+.add-note textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.add-note textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* الأزرار */
+.btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* الملاحظات */
+#notes {
+  margin-top: 20px;
+}
+
+.note {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  word-wrap: break-word; /* يكسر الكلمة الطويلة لو ما في مسافة */
+}
+
+.note p {
+  margin-bottom: 8px;
+}
+
+/* زر الحذف داخل كل ملاحظة */
+.note button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.note button:hover {
+  background: #c0392b;
+}
+.delete {
+  width: 30px;
+  height: 30px;
+}
+.edit {
+  width: 30px;
+  height: 30px;
+}
